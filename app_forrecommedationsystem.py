@@ -31,10 +31,10 @@ def recommend(movie):
     return recommended_movies,recommended_movies_poster
 
 # Load the necessary python pickle files
-movies_dict = pickle.load(open('pickle/movie_dict.pkl','rb'))
+movies_dict = pickle.load(open('movie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 
-similarity = pickle.load(open('pickle/similarity.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 # Fetch posters from the TMDb database
 def fetch_poster(movie_id):
