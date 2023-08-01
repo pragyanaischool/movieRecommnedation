@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+numpy
+jsonschema
+sumy
+GitPython
